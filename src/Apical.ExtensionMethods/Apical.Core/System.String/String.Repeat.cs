@@ -1,0 +1,30 @@
+#region License
+
+// // Description: C# Extension Methods | Enhance the .NET Framework and .NET Core with over 1000 extension methods.
+// // Issues: https://github.com/emonarafat/Apical.ExtensionMethods/issues
+// // License (MIT): https://github.com/emonarafat/Apical.ExtensionMethods/blob/master/LICENSE
+// 
+// // Copyright © Apical Automates Inc. All rights reserved.
+
+#endregion
+
+using System.Text;
+
+public static partial class Extensions
+{
+    /// <summary>
+    ///     A string extension method that repeats the string a specified number of times.
+    /// </summary>
+    /// <param name="this">The @this to act on.</param>
+    /// <param name="repeatCount">Number of repeats.</param>
+    /// <returns>The repeated string.</returns>
+    public static string Repeat(this string @this, int repeatCount)
+    {
+        if (@this.Length == 1) return new string(@this[0], repeatCount);
+
+        var sb = new StringBuilder(repeatCount * @this.Length);
+        while (repeatCount-- > 0) sb.Append(@this);
+
+        return sb.ToString();
+    }
+}
