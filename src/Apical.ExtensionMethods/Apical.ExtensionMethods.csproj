@@ -17,6 +17,9 @@
     <PackageReleaseNotes>Enhance the .NET Framework and .NET Core with over 1000 extension methods.</PackageReleaseNotes>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Version>2.1.1</Version>
+    <Authors>emon.arafat</Authors>
+    <Company>Apical Automate</Company>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
