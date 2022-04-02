@@ -44,8 +44,7 @@ public static partial class Extensions
     /// <returns>The extracted comment single line.</returns>
     public static StringBuilder ExtractCommentSingleLine(this StringBuilder @this, int startIndex)
     {
-        int endIndex;
-        return @this.ExtractCommentSingleLine(startIndex, out endIndex);
+        return @this.ExtractCommentSingleLine(startIndex, out int endIndex);
     }
 
     /// <summary>

@@ -35,8 +35,7 @@ public static partial class Extensions
     /// <returns>The extracted comment.</returns>
     public static StringBuilder ExtractComment(this StringBuilder @this, int startIndex)
     {
-        int endIndex;
-        return @this.ExtractComment(startIndex, out endIndex);
+        return @this.ExtractComment(startIndex, out int endIndex);
     }
 
     /// <summary>A StringBuilder extension method that extracts the comment described by @this.</summary>

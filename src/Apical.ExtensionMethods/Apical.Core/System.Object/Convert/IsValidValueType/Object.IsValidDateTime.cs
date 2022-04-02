@@ -24,7 +24,6 @@ public static partial class Extensions
     {
         if (@this == null) return true;
 
-        DateTime result;
-        return DateTime.TryParse(@this.ToString(), out result);
+        return DateTime.TryParse(@this.ToString(), out var result);
     }
 }

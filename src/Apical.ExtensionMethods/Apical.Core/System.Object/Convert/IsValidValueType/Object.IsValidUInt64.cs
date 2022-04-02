@@ -22,7 +22,6 @@ public static partial class Extensions
     {
         if (@this == null) return true;
 
-        ulong result;
-        return ulong.TryParse(@this.ToString(), out result);
+        return ulong.TryParse(@this.ToString(), out var result);
     }
 }

@@ -13,14 +13,14 @@
     <PackageProjectUrl>https://github.com/emonarafat/Apical.ExtensionMethods</PackageProjectUrl>
     <Copyright>Copyright © Apical Automates Inc. All rights reserved.</Copyright>
     <AssemblyVersion>2.1.1</AssemblyVersion>
-    <FileVersion>1.1.1</FileVersion>
+    <FileVersion>2.1.1</FileVersion>
     <PackageReleaseNotes>Enhance the .NET Framework and .NET Core with over 1000 extension methods.</PackageReleaseNotes>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <LangVersion>9</LangVersion>
+    <LangVersion>10</LangVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">

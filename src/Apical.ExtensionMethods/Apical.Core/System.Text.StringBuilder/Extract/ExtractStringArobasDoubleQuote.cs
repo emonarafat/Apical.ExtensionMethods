@@ -46,8 +46,7 @@ public static partial class Extensions
     /// <returns>The extracted string arobas double quote.</returns>
     public static StringBuilder ExtractStringArobasDoubleQuote(this StringBuilder @this, int startIndex)
     {
-        int endIndex;
-        return @this.ExtractStringArobasDoubleQuote(startIndex, out endIndex);
+        return @this.ExtractStringArobasDoubleQuote(startIndex, out int endIndex);
     }
 
     /// <summary>

@@ -44,8 +44,7 @@ public static partial class Extensions
     /// <returns>The extracted comment multi line.</returns>
     public static StringBuilder ExtractCommentMultiLine(this StringBuilder @this, int startIndex)
     {
-        int endIndex;
-        return @this.ExtractCommentMultiLine(startIndex, out endIndex);
+        return @this.ExtractCommentMultiLine(startIndex, out int endIndex);
     }
 
     /// <summary>

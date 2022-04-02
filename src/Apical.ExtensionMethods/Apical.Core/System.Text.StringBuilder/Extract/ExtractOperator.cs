@@ -35,8 +35,7 @@ public static partial class Extensions
     /// <returns>The extracted operator.</returns>
     public static StringBuilder ExtractOperator(this StringBuilder @this, int startIndex)
     {
-        int endIndex;
-        return @this.ExtractOperator(startIndex, out endIndex);
+        return @this.ExtractOperator(startIndex, out int endIndex);
     }
 
     /// <summary>A StringBuilder extension method that extracts the operator described by @this.</summary>

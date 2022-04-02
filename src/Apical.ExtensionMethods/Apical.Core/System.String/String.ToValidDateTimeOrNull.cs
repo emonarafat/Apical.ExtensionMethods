@@ -19,9 +19,7 @@ public static partial class Extensions
     /// <returns>@this as a DateTime?</returns>
     public static DateTime? ToValidDateTimeOrNull(this string @this)
     {
-        DateTime date;
-
-        if (DateTime.TryParse(@this, out date)) return date;
+        if (DateTime.TryParse(@this, out var date)) return date;
 
         return null;
     }

@@ -24,8 +24,8 @@ public static partial class Extensions
         // Example: [Visibility] [Modifier] [Type] [Name] [<GenericArguments>] [:] [Inherited Class] [Inherited Interface]
         var sb = new StringBuilder();
 
-        // Variable
-        var hasInheritedClass = false;
+        //// Variable
+        //var hasInheritedClass = false;
 
         // Visibility
         sb.Append(@this.IsPublic ? "public " : "internal ");

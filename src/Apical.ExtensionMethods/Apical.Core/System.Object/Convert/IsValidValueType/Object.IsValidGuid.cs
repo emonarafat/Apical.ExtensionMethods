@@ -22,7 +22,6 @@ public static partial class Extensions
     /// <returns>true if valid System.Guid, false if not.</returns>
     public static bool IsValidGuid(this object @this)
     {
-        Guid result;
-        return Guid.TryParse(@this.ToString(), out result);
+        return Guid.TryParse(@this.ToString(), out var result);
     }
 }

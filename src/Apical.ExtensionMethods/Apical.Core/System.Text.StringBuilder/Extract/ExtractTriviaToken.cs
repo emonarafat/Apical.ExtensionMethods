@@ -44,8 +44,7 @@ public static partial class Extensions
     /// <returns>The extracted trivia tokens.</returns>
     public static StringBuilder ExtractTriviaToken(this StringBuilder @this, int startIndex)
     {
-        int endIndex;
-        return @this.ExtractTriviaToken(startIndex, out endIndex);
+        return @this.ExtractTriviaToken(startIndex, out int endIndex);
     }
 
     /// <summary>

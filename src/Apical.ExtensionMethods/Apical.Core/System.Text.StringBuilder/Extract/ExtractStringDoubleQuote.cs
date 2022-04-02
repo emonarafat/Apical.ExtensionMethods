@@ -46,8 +46,7 @@ public static partial class Extensions
     /// <returns>The extracted string double quote.</returns>
     public static StringBuilder ExtractStringDoubleQuote(this StringBuilder @this, int startIndex)
     {
-        int endIndex;
-        return @this.ExtractStringDoubleQuote(startIndex, out endIndex);
+        return @this.ExtractStringDoubleQuote(startIndex, out int endIndex);
     }
 
     /// <summary>
