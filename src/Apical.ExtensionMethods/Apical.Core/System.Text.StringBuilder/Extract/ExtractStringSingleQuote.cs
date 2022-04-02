@@ -47,8 +47,7 @@ public static partial class Extensions
     /// <returns>The extracted string single quote.</returns>
     public static StringBuilder ExtractStringSingleQuote(this StringBuilder @this, int startIndex)
     {
-        int endIndex;
-        return @this.ExtractStringSingleQuote(startIndex, out endIndex);
+        return @this.ExtractStringSingleQuote(startIndex, out int endIndex);
     }
 
     /// <summary>

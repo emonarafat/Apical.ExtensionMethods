@@ -37,8 +37,7 @@ public static partial class Extensions
     /// <returns>The extracted directive.</returns>
     public static StringBuilder ExtractToken(this StringBuilder @this, int startIndex)
     {
-        int endIndex;
-        return @this.ExtractToken(startIndex, out endIndex);
+        return @this.ExtractToken(startIndex, out int endIndex);
     }
 
     /// <summary>A StringBuilder extension method that extracts the directive described by @this.</summary>

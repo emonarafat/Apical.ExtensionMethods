@@ -46,8 +46,7 @@ public static partial class Extensions
     /// <returns>The extracted string arobas single quote.</returns>
     public static StringBuilder ExtractStringArobasSingleQuote(this StringBuilder @this, int startIndex)
     {
-        int endIndex;
-        return @this.ExtractStringArobasSingleQuote(startIndex, out endIndex);
+        return @this.ExtractStringArobasSingleQuote(startIndex, out int endIndex);
     }
 
     /// <summary>

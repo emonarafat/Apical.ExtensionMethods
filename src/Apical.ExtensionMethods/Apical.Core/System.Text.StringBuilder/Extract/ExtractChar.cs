@@ -36,8 +36,7 @@ public static partial class Extensions
     /// <returns>The extracted character.</returns>
     public static char ExtractChar(this StringBuilder @this, int startIndex)
     {
-        int endIndex;
-        return @this.ExtractChar(startIndex, out endIndex);
+        return @this.ExtractChar(startIndex, out int endIndex);
     }
 
     /// <summary>A StringBuilder extension method that extracts the character described by @this.</summary>

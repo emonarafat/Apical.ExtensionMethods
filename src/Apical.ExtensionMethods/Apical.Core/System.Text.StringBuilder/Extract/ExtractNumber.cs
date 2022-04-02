@@ -35,8 +35,7 @@ public static partial class Extensions
     /// <returns>The extracted number.</returns>
     public static StringBuilder ExtractNumber(this StringBuilder @this, int startIndex)
     {
-        int endIndex;
-        return @this.ExtractNumber(startIndex, out endIndex);
+        return @this.ExtractNumber(startIndex, out int endIndex);
     }
 
     /// <summary>A StringBuilder extension method that extracts the number described by @this.</summary>

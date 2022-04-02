@@ -35,8 +35,7 @@ public static partial class Extensions
     /// <returns>The extracted hexadecimal.</returns>
     public static StringBuilder ExtractHexadecimal(this StringBuilder @this, int startIndex)
     {
-        int endIndex;
-        return @this.ExtractHexadecimal(startIndex, out endIndex);
+        return @this.ExtractHexadecimal(startIndex, out int endIndex);
     }
 
     /// <summary>A StringBuilder extension method that extracts the hexadecimal described by @this.</summary>

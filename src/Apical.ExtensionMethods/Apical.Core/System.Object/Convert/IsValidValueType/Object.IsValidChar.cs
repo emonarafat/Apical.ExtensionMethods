@@ -20,7 +20,6 @@ public static partial class Extensions
     /// <returns>true if valid char, false if not.</returns>
     public static bool IsValidChar(this object @this)
     {
-        char result;
-        return char.TryParse(@this.ToString(), out result);
+        return char.TryParse(@this.ToString(), out var result);
     }
 }

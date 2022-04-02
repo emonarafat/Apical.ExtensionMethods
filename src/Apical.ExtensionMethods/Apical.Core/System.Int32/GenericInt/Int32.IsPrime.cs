@@ -27,7 +27,7 @@ public static partial class Extensions
         if (@this % 2 == 0) return false;
 
         var sqrt = (int)Math.Sqrt(@this);
-        for (long t = 3; t <= sqrt; t = t + 2)
+        for (long t = 3; t <= sqrt; t += 2)
             if (@this % t == 0)
                 return false;
 

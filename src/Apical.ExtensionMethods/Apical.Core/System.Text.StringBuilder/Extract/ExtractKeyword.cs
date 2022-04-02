@@ -35,8 +35,7 @@ public static partial class Extensions
     /// <returns>The extracted keyword.</returns>
     public static StringBuilder ExtractKeyword(this StringBuilder @this, int startIndex)
     {
-        int endIndex;
-        return @this.ExtractKeyword(startIndex, out endIndex);
+        return @this.ExtractKeyword(startIndex, out int endIndex);
     }
 
     /// <summary>A StringBuilder extension method that extracts the keyword described by @this.</summary>

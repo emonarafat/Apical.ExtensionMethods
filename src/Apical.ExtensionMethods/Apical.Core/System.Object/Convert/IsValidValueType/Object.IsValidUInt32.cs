@@ -22,7 +22,6 @@ public static partial class Extensions
     {
         if (@this == null) return true;
 
-        uint result;
-        return uint.TryParse(@this.ToString(), out result);
+        return uint.TryParse(@this.ToString(), out var result);
     }
 }

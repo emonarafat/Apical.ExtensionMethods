@@ -22,7 +22,6 @@ public static partial class Extensions
     {
         if (@this == null) return true;
 
-        float result;
-        return float.TryParse(@this.ToString(), out result);
+        return float.TryParse(@this.ToString(), out var result);
     }
 }
